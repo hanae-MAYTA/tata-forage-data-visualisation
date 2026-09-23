@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "online-retail"
+version = "1.0.0"
+description = "Cleaning and business analysis of the UCI Online Retail dataset (Tata / Forage job simulation)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.2",
+    "matplotlib>=3.8",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["jupyterlab>=4.0", "ipykernel>=6.29", "nbconvert>=7.16", "pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,2 @@
+# Installs the project package (src/online_retail) with notebook and test tooling.
+-e .[dev]

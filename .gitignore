@@ -1,0 +1,36 @@
+# Data (downloaded or generated locally, see README)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.env
+credentials.json
+secrets.json
+
+# Power BI temporary files
+~$*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
